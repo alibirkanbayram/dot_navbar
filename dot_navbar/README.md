@@ -10,13 +10,13 @@
 </p>
 
 <p> Screen Shot</p>
-![style1](assets/ss.jpg)
+ ![style1](assets/ss.png)
 
 <p> Video </p>
-![style1](assets/video.mp4)
+ ![style1](assets/video.gif)
 
 <p> Example Github Repo </p>
-[Example flutter project](https://github.com/haptome/watchs)
+[Example flutter project](https://github.com/alibirkanbayram/dot_navbar/tree/main/dot_navbar/example)
 
 <h2> Introduction </h2>
 The <b>dot_navbar</b> package provides a customizable and visually appealing dotted bottom/top navigation bar for Flutter developers. This package allows you to easily integrate a bottom navigation bar into your Flutter application with smooth navigation between screens.

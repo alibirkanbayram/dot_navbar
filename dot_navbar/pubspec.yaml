@@ -1,6 +1,6 @@
 name: dot_navbar
 description: A Flutter package for a customizable navigation bar with dot indicators.
-version: 0.0.1
+version: 0.0.2
 homepage:
 
 environment:
