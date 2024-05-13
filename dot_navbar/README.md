@@ -10,10 +10,13 @@
 </p>
 
 <p> Screen Shot</p>
-https://github.com/alibirkanbayram/dot_navbar/assets/ss.jpg
+![style1](assets/ss.jpg)
 
 <p> Video </p>
-https://github.com/alibirkanbayram/dot_navbar/assets/video.mp4
+![style1](assets/video.mp4)
+
+<p> Example Github Repo </p>
+[Example flutter project](https://github.com/haptome/watchs)
 
 <h2> Introduction </h2>
 The <b>dot_navbar</b> package provides a customizable and visually appealing dotted bottom/top navigation bar for Flutter developers. This package allows you to easily integrate a bottom navigation bar into your Flutter application with smooth navigation between screens.
@@ -35,6 +38,9 @@ To use dot_navbar, add the following to your <b>pubspec.yaml</b> file:
 ```
 dependencies:
   dot_navbar: ^0.0.1
+  riverpod: ^
+  flutter_riverpod: ^
+  hooks_riverpod: ^
 ```
 
 Then, run:
@@ -127,6 +133,75 @@ DotMenuItemModel(
 <h2> Complete Implementation </h2>
 
 ```
+import 'package:dot_navbar/dot_navbar.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+
+void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setEnabledSystemUIMode(SystemUiMode.edgeToEdge, overlays: []);
+  runApp(
+    const ProviderScope(
+      child: MyApp(),
+    ),
+  );
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: SharedConstants.appName,
+      home: DotNavBar(
+        navbarBackgroundColor: Colors.black,
+        selectedItemColor: Colors.white,
+        unselectedItemColor: Colors.grey,
+        isBottom: true,
+        isTitleVisible: false,
+        dotMenuItems:[
+            DotMenuItemModel(
+                keyValue: 'home',
+                page: Container(
+                    color: Colors.red,
+                ),
+                icon: Icons.home,
+            ),
+            DotMenuItemModel(
+                keyValue: 'search',
+                page: Container(
+                    color: Colors.blue,
+                ),
+                icon: Icons.search,
+            ),
+            DotMenuItemModel(
+                keyValue: 'add',
+                page: Container(
+                    color: Colors.green,
+                ),
+                icon: Icons.add,
+            ),
+            DotMenuItemModel(
+                keyValue: 'notifications',
+                page: Container(
+                    color: Colors.yellow,
+                ),
+                icon: Icons.notifications,
+            ),
+            DotMenuItemModel(
+                keyValue: 'profile',
+                page: Container(
+                    color: Colors.purple,
+                ),
+                icon: Icons.person,
+            ),
+        ]
+      ),
+    );
+  }
+}
 
 ```
 

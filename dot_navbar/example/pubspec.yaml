@@ -15,6 +15,7 @@ dependencies:
   cupertino_icons: ^1.0.6
   dot_navbar:
     path: ../
+  # dot_navbar: ^0.0.1
 
   # Services
   riverpod: ^2.5.1
