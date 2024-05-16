@@ -9,11 +9,11 @@
 <br>
 </p>
 
-<p> Screen Shot</p>
- ![style1](assets/ss.png)
+<h2 align="left">Screen Shot</h2>
+![style1](github-assets/ss.png)
 
-<p> Video </p>
- ![style1](assets/video.gif)
+<h2 align="left">Video</h2>
+![style1](github-assets/video.gif)
 
 <p> Example Github Repo </p>
 [Example flutter project](https://github.com/alibirkanbayram/dot_navbar/tree/main/dot_navbar/example)
@@ -56,6 +56,20 @@ import 'package:dot_novbar/dot_navbar.dart';
 ```
 
 <h2>Usage</h2>
+
+First Step:
+
+- This package used riverpod lib.
+
+```
+    void main() {
+    runApp(
+        const ProviderScope(
+        child: MyApp(),
+        ),
+    );
+    }
+```
 
 <h4>Dot NavigationBar</h4>
 

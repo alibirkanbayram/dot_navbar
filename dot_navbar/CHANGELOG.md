@@ -1,10 +1,8 @@
-## 0.0.2
+## 0.0.7
 
-## Feture
+## ADD
 
-Add: SS, Video and Github Repo
-
-## 0.0.1
+Image and Video
 
 ## Feture
 
